@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{750BA7EC-EB1E-4FF2-9D8A-21F6DAE18F8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SaGiVproject</RootNamespace>
+    <AssemblyName>SaGiVproject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="buyphones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buyphones.Designer.cs">
+      <DependentUpon>buyphones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chartMOSTexpansive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chartMOSTexpansive.Designer.cs">
+      <DependentUpon>chartMOSTexpansive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chartpack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chartpack.Designer.cs">
+      <DependentUpon>chartpack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chartworker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chartworker.Designer.cs">
+      <DependentUpon>chartworker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chartwpacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chartwpacks.Designer.cs">
+      <DependentUpon>chartwpacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_fix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_fix.Designer.cs">
+      <DependentUpon>order_fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order_pack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order_pack.Designer.cs">
+      <DependentUpon>Order_pack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="phonesSAGIVDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>phonesSAGIVDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Phone_sold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phone_sold.Designer.cs">
+      <DependentUpon>Phone_sold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchbill1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchbill1.Designer.cs">
+      <DependentUpon>searchbill1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchBillPack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchBillPack.Designer.cs">
+      <DependentUpon>searchBillPack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchbillsapak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchbillsapak.Designer.cs">
+      <DependentUpon>searchbillsapak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tablesWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tablesWorker.Designer.cs">
+      <DependentUpon>tablesWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TABLES_order_pack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TABLES_order_pack.Designer.cs">
+      <DependentUpon>TABLES_order_pack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="phones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="phones.Designer.cs">
+      <DependentUpon>phones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="table_tikun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="table_tikun.Designer.cs">
+      <DependentUpon>table_tikun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="takala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="takala.Designer.cs">
+      <DependentUpon>takala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ttables2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ttables2.Designer.cs">
+      <DependentUpon>ttables2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="workers.Designer.cs">
+      <DependentUpon>workers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clients.Designer.cs">
+      <DependentUpon>clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sapaks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sapaks.Designer.cs">
+      <DependentUpon>sapaks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="packs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="packs.Designer.cs">
+      <DependentUpon>packs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yazran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yazran.Designer.cs">
+      <DependentUpon>yazran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="types.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="types.Designer.cs">
+      <DependentUpon>types.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_sapak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_sapak.Designer.cs">
+      <DependentUpon>order_sapak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="startpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="startpage.Designer.cs">
+      <DependentUpon>startpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tables_Mannager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tables_Mannager.Designer.cs">
+      <DependentUpon>tables_Mannager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tables_phones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tables_phones.Designer.cs">
+      <DependentUpon>tables_phones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ttables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ttables.Designer.cs">
+      <DependentUpon>ttables.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="buyphones.resx">
+      <DependentUpon>buyphones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chartMOSTexpansive.resx">
+      <DependentUpon>chartMOSTexpansive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chartpack.resx">
+      <DependentUpon>chartpack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chartworker.resx">
+      <DependentUpon>chartworker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chartwpacks.resx">
+      <DependentUpon>chartwpacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_fix.resx">
+      <DependentUpon>order_fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order_pack.resx">
+      <DependentUpon>Order_pack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phone_sold.resx">
+      <DependentUpon>Phone_sold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchbill1.resx">
+      <DependentUpon>searchbill1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchBillPack.resx">
+      <DependentUpon>searchBillPack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchbillsapak.resx">
+      <DependentUpon>searchbillsapak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tablesWorker.resx">
+      <DependentUpon>tablesWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TABLES_order_pack.resx">
+      <DependentUpon>TABLES_order_pack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="phones.resx">
+      <DependentUpon>phones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="table_tikun.resx">
+      <DependentUpon>table_tikun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="takala.resx">
+      <DependentUpon>takala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ttables2.resx">
+      <DependentUpon>ttables2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workers.resx">
+      <DependentUpon>workers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clients.resx">
+      <DependentUpon>clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sapaks.resx">
+      <DependentUpon>sapaks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="packs.resx">
+      <DependentUpon>packs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yazran.resx">
+      <DependentUpon>yazran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="types.resx">
+      <DependentUpon>types.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_sapak.resx">
+      <DependentUpon>order_sapak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="startpage.resx">
+      <DependentUpon>startpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tables_Mannager.resx">
+      <DependentUpon>tables_Mannager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tables_phones.resx">
+      <DependentUpon>tables_phones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ttables.resx">
+      <DependentUpon>ttables.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="phonesSAGIVDataSet.xsc">
+      <DependentUpon>phonesSAGIVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="phonesSAGIVDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>phonesSAGIVDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="phonesSAGIVDataSet.xss">
+      <DependentUpon>phonesSAGIVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\red-phone-box-and-big-ben-yhun-suarez.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\393179-fastest-mobile-networks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\iphones_DesignMark_flickr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cellphone-unlocked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\6451.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Abstract-Color-Gears-Vector-Graphic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Brown-Wallpapers-Free-HD.jpg" />
+    <Content Include="Images\cool-background.jpg" />
+    <None Include="Images\recycled-texture-background-by-sandeep-m-on-deviantart.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
